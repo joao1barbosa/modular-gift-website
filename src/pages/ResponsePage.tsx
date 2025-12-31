@@ -29,7 +29,7 @@ export const ResponsePage = () => {
           </div>
           <button
             onClick={() => setIsPlaying(!isPlaying)}
-            className="absolute top-4 right-4 text-zinc-200 hover:cursor-pointer"
+            className="absolute top-4 right-4 hover:cursor-pointer"
           >
             {isPlaying ? <Pause /> : <Play />}
           </button>
@@ -37,8 +37,8 @@ export const ResponsePage = () => {
       )}
 
       <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden p-4">
-        <h1 className="text-5xl text-zinc-200 font-bold mb-4">{response}</h1>
-        <h2 className="text-2xl text-zinc-200 font-bold mb-8">{sub}</h2>
+        <h1 className="text-5xl font-bold mb-4">{response}</h1>
+        <h2 className="text-2xl font-bold mb-8">{sub}</h2>
 
         <SelectedModule value={value} />
       </div>

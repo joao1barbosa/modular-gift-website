@@ -7,11 +7,11 @@ export function QuestionPage() {
   const { hasStarted, position, moveButton } = useMovable();
   const isDesktop = useMediaQuery({ minWidth: 1025 });
 
-  if (!isDesktop){
-    return (
-      <h1 className="z-5 text-5xl md:text-5xl font-bold text-center mb-12 text-zinc-200">Abra no computador</h1>
-    );
-  }
+  // if (!isDesktop){
+  //   return (
+  //     <h1 className="z-5 text-5xl md:text-5xl font-bold text-center mb-12 text-zinc-200">Abra no computador</h1>
+  //   );
+  // }
 
   const imageModules = import.meta.glob(
     "/public/question/photos/*.{png,jpg,jpeg,SVG,webp}",
@@ -37,7 +37,7 @@ export function QuestionPage() {
           <div className="flex flex-row justify-end w-1/2">
             <Link
               to="/response"
-              className="w-24 h-12 no-underline bg-green-800 hover:bg-green-700 text-zinc-200 px-8 py-3 rounded-lg font-bold shadow-sm transition-transform active:scale-95"
+              className="w-24 h-12 no-underline bg-green-800 hover:bg-green-700 px-8 py-3 rounded-lg font-bold shadow-sm transition-transform active:scale-95"
             >
               Sim
             </Link>
@@ -62,7 +62,7 @@ export function QuestionPage() {
                       transition: "all 0.2s ease-out",
                     }
               }
-              className="w-24 h-12 bg-red-800 text-zinc-200 px-8 py-3 rounded-lg font-bold shadow-sm z-10"
+              className="w-24 h-12 bg-red-800 px-8 py-3 rounded-lg font-bold shadow-sm z-10"
             >
               Não
             </button>
