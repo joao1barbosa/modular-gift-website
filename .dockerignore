@@ -2,5 +2,5 @@ node_modules
 dist
 .git
 .env
-public/question/*
-public/response/*
+src/assets/question/photos/*
+src/assets/response/*
